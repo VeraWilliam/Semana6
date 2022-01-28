@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>William Vera</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/perfil.css" />
+    <link rel="stylesheet" href="./css/habilidad.css" />
+    <link rel="stylesheet" href="./css/experiencia.css">
+    <link rel="stylesheet" href="./css/curso.css">
+    <link rel="stylesheet" href="./css/contacto.css">
+    <script defer src="./js/hamburguesa.js"></script>
+    <script defer src="./js/formulario.js"></script>
+    
+  </head>
+  <body>
+   
+    <header class="header">
+      <nav class="navegacion">
+        <a href="#" class="logo">
+          <img height="50" width="50" src="./img/Vera William.jpeg" alt="programador" />
+          <div class="logotype"> William Vera<br />( Estudiante )
+          </div>
+        </a>
+        <button class="openMenu" aria-label="Abrir menú">
+          <img src="./img/menu icon.svg" alt="abrir menú" />
+        </button>
+        <ul class="mainMenu">
+          <button class="closeMenu" aria-label="Cerrar menú">
+            <img src="./img/cerrar icon.svg" alt="cerrar menú" />
+          </button>
+          <li><a href="#perfil" class="seleccion">Perfil</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#curso">Cursos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="perfil" id="perfil">
+        <div class="perfil-info">
+          <h1 class="perfil-titulo">Hola, soy <br />William Vera</h1>
+          <p class="perfil-detalles">
+            Soy un estudiante de la Universidad Estatal de Milagro "Unemi" estoy siguiendo la carrera de Ingieneria de Software, me gusta lo que tenga que ver con programación, naci en Manabi y me crie en Naranjal-Guayas. 
+          </p>
+          <button class="perfil-btn">Download cv</button>
+        </div>
+        <span class="perfil-seccion-img">
+          <img class="perfil-img" src="./img/perfil.jpg" alt="" />          
+        </span>
+      </section>
+    </div>
+
+    <section class="experiencias" id="experiencia">
+      <img src="./img/wave.svg" alt="" class="wave">
+      <div class="experiencias-body">
+        <h2 class="experiencias-titulo">Experiencia</h2>
+        <div class="experienciasGrid">
+          <div class="empty"></div>
+          <div class="linea"></div>
+          <div class="experiencia">
+            <div class="fecha">2020-2021</div>
+            <div class="socio">Base de Datos</div>
+            <div class="tema">Inventariado de una Tienda</div>
+            <div class="descripcion">
+              Hemos realizado un proyecto con la ayuda de Microsoft SQL Server en el cual pudimos realizar la creacion de un almacenamientopara el inventariado de una tienda y con su respectivo mantenimiento.
+            </div>
+          </div>
+          <div class="experiencia experienceLeft">
+            <div class="fecha">2020-2021</div>
+            <div class="socio">Redes de Datos</div>
+            <div class="tema">Cisco</div>
+            <div class="descripcion">
+              emos realizado una topografia con la ayuda de Cisco Packet Tracer con el fin de que todos los equipos se deben comunicar entre sí mediante por SSH al switch control.
+            </div>
+          </div>
+          <div class="linea"></div>
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <div class="linea"></div>
+          <div class="experiencia">
+            <div class="fecha">2022</div>
+            <div class="socio">Programacion Orientada a Objeto</div>
+            <div class="tema">Portafolio</div>
+            <div class="descripcion">
+             Hemos realizado una pagina web con la ayuda de Visual Studio Code para asi tener nuestro portafolio personal mediante el lenguaje de programación.
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="./img/wave.svg" alt="" class="wave waveBottom">
+    </section>
+
+    <div class="horizontal-padding vertical-padding">
+      <section class="habilidades" id="habilidades">
+        <h2 class="habilidades-titulo">Habilidades</h2>
+        <ul class="habilidades-lista">
+         <li class="hab">CSS</li>
+          <li class="hab">HTML</li>
+          <li class="hab">JavaScript</li>
+          <li class="hab">TypeScript</li>
+          <li class="hab">React.js</li>
+          <li class="hab">Node.js</li>
+          <li class="hab">Express</li>
+          <li class="hab">Python</li>
+          <li class="hab">Django</li>
+          <li class="hab">Vbnet</li>
+          <li class="hab">Csharp</li>
+          <li class="hab">Vfox</li>
+          <li class="hab">Mysql</li>
+          <li class="hab">Postgress</li>
+          <li class="hab">MongoDB</li>
+          <li class="hab">Firebase</li>
+          <li class="hab">Sql Server</li>
+          <li class="hab">Genexus</li>
+        </ul>
+      </section>
+    </div>
+    <div class="cursos">
+        <section class="curso" id="curso">
+            <div class="curso-titulo">
+                 <h1>CURSOS</h1>
+             </div>
+             <div class="sobre">
+                <div class="tarjeta">
+                        <div class="imgIcon">
+                            <img src="./img/js.jpg" alt="">
+                        </div>
+                    <div class="resumen">
+                        <h2>JavaScrit</h2>
+                            <p>Es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo, juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo dinámicos, animación, y mucho más).</p>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                        <div class="imgIcon">
+                            <img src="./img/css.jpg" alt="">
+                        </div>
+                    <div class="resumen">
+                        <h2>CSS</h2>
+                            <p>El Cascading Style Sheets (CSS) es un lenguaje usado para definir la presentación de un documento estructurado escrito en HTML y derivados. El W3C es el encargado de formular la especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o navegadores.</p>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                        <div class="imgIcon">
+                            <img src="./img/html.jpg" alt="">
+                        </div>
+                    <div class="resumen">
+                        <h2>HTML</h2>
+                            <p>El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+        
+      </div>  
+        <div class="co">
+          <section class="contacto" id="contacto">
+            <div class="contacto-caja">
+              <div class="izq">
+                <div class="cont">
+                  <h1 class="contacto-titulo">Contacto </h1>
+                </div>
+                <h3 class="dire">Direccion:</h3>
+                <h3 class="resDire">Tarqui 320 y Guayaquil </h3>
+                <h3 class="em">Email:</h3>
+                <h3 class="resema">wverah@unemi.edu.ec</h3>
+                <h3 class="mensaje">Deje un mensaje y con gusto le respondere</h3>
+              </div>
+              
+                
+                <div class="der" onmousemove="validarCorreo()">
+                   <form action=""  id="formulario">
+                    <label for="nombre" class="nombre">Nombre:</label><br/>
+                    <input type="text" id="nombre" class="nombreInput" name="nombre"  placeholder="Escribir nombre..." onkeypress="return soloLetras(event)"><br/>
+                    <label for="email" class="email">Email</label><br/>
+                    <input type="text"  id="email" class="emailInput" name="email" placeholder="Escribir email..." ><br/>
+                    <label for="mensaje" class="mensaje">Mensaje</label><br>
+                    <input type="textarea" id="mensaje" class="mensajeInput" name="mensaje" placeholder="Escribir mensaje...">
+                    <button type="button" class="enviar" onclick="getData()">  Enviar  </button>               
+                    </form>
+                </div>
+                 
+            </div>
+            </section>
+        </div>
+  </body>
+</html>
+
+
+

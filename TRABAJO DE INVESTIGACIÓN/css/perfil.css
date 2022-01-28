@@ -1,0 +1,87 @@
+.perfil-info {
+  margin-bottom: 30px;
+}
+
+.perfil-img {
+  width: 85%;
+  max-width: 360px;
+}
+
+.perfil-seccion-img {
+  position: relative;
+  margin: 0 15px;
+}
+
+.perfil {
+  text-align: center;
+}
+
+.perfil-titulo {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  color:  #1B7161;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.perfil-detalles {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.5;
+  max-width: 550px;
+  margin: 20px auto;
+}
+
+.perfil-btn {
+  background-color: black;
+  color: #e5f3f0;
+  border: none;
+  font-size: 20px;
+  padding: 0.5em 1em;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.perfil-btn:hover {
+  filter: brightness(130%);
+  background-color: rgba(255, 166, 0, 0.739);
+  color: black;
+}
+
+@media (min-width: 760px) {
+  .perfil-info {
+    margin-bottom: 0px;
+  }
+  
+  .perfil-img {
+    width: 100%;
+    max-width: 350px;
+    transform: scaleX(-1);
+  }
+
+  
+  .perfil {
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+    align-items: center;
+  }
+  
+  .perfil-titulo {
+    font-size: 60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1B7161;
+  }
+  
+  .perfil-detalles {
+    font-size: 25px;
+    margin: 30px 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .perfil-btn {
+    font-size: 28px;
+  }
+}

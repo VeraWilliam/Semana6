@@ -1,0 +1,99 @@
+.contacto-caja{
+    background-color: #1b7161;
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    height: 500px;
+    display: flex;
+}
+.contacto-titulo{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+.izq{
+   margin-left: 8%;
+    
+    
+}
+.der{
+   
+    display: flex;
+    margin-left: 10%;
+    width: 30%;
+    height: 10%;
+    margin-top: 10%;
+    text-align: left;
+}
+.cont{
+    font-size: 150%;
+    height: 15%;
+    margin-top: 20%;
+}
+.enviar{
+    color: white;
+    float: left;    
+    margin-top: 5%;
+    width: 290px;
+    text-align: center;
+    height: 25px;
+    background-color:black;
+    border-radius: 10px; 
+}
+
+.enviar:hover{
+    background-color: rgba(255, 166, 0, 0.739);
+    color: black;
+}
+.nombre, .email, .mensaje{
+    margin-top: 6%;
+    
+}
+.mensajeInput{
+    height: 240%;
+}
+.nombreInput, .emailInput, .mensajeInput{
+    width: 95%;
+}
+
+
+@media (max-width: 1200px) {
+    .contacto-caja{
+        margin-top: 10%;
+        height: 1000px;
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 10%;
+        display: flow-root;
+    }
+    
+    .izq{
+        width: 50%;
+        height: 10%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 10%;
+        margin-bottom: 25%;
+        
+    }
+    .cont{
+    font-size: 150%;
+    height: 75%;
+    margin-top: 20%;
+}
+    
+    .der{
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 50%;
+        margin-bottom: 25%;
+    }
+    .enviar{
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    }
+}
+

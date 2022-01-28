@@ -1,0 +1,129 @@
+.experiencias {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencias-body {
+  background-color: #1B7161;
+  color: white;
+}
+
+.wave {
+  width: 100%;
+  position: relative;
+  top: 2px;
+}
+
+.waveBottom {
+  transform: scaleY(-1);
+  top: -2px;
+}
+
+.experiencias-titulo {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 30px;
+  margin: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fecha {
+  font-size: 26px;
+  font-weight: bold;
+  color: black;
+}
+
+.socio {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 5px;
+}
+
+.tema {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.descripcion {
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.experiencia {
+  padding: 25px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+  .experiencias-titulo {
+    font-size: 50px;
+    margin: 35px 0;
+  }
+
+  .fecha {
+    font-size: 40px;
+  }
+
+  .socio {
+    font-size: 25px;
+  }
+
+  .tema {
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .descripcion {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+  }
+
+  .experiencia {
+    padding: 0;
+  }
+
+  .experienciaLeft {
+    text-align: right;
+  }
+
+  .experienciasGrid {
+    display: grid;
+    grid-template-columns: auto 02px auto;
+    gap: 20px 70px;
+    padding: 70px;
+    justify-content: center;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .linea {
+    background-color: var(--text-color-inverse);
+    position: relative;
+  }
+
+  .linea::before,
+  .linea::after {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: var(--text-color-inverse);
+    border-radius: 50%;
+
+    position: absolute;
+    top: -20px;
+    left: -9px;
+  }
+
+  .linea::after {
+    top: 100%;
+    z-index: 2;
+  }
+}

@@ -1,0 +1,46 @@
+.habilidades {
+  max-width: 980px;
+  margin: 0 auto;
+  
+}
+
+.habilidades-titulo {
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #1b7161;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hab {
+  font-size: 20px;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 42px;
+  padding: 0.5em 0.7em;
+  margin: 10px;
+}
+.hab:hover{
+    background-color: #1b7161;
+    color: rgba(255, 166, 0, 0.739);
+}
+
+.habilidades-lista {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media(min-width: 760px) {
+  .habilidades-titulo {
+    font-size: 50px;
+  }
+  
+  .hab {
+    font-size: 30px;
+    margin: 20px;
+  }
+}

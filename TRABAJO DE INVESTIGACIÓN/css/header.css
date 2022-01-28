@@ -1,0 +1,144 @@
+.header {
+  box-shadow: 0 4px 5px var(--text-color-inverse);
+  position: fixed;
+  background-color: var(--theme-color);
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: #1B7161;
+}
+
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #1B7161;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+
+.logo img {
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.mainMenu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mainMenu li {
+  padding: 0 10px;
+}
+
+.mainMenu a {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.mainMenu a::after {
+  content: "";
+  background-color: rgba(255, 166, 0, 0.739);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 4px);
+  width: 100%;
+  height: 4px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.mainMenu a.seleccion::after,
+.mainMenu a:hover::after {
+  opacity:1;
+}
+
+.mainMenu a:hover {
+  color: rgba(255, 166, 0, 0.739);
+}
+
+.openMenu,
+.closeMenu {
+  display: none;
+}
+
+.logotype {
+  display: flex;
+  justify-content: center;
+}
+
+
+@media (max-width: 800px) {  
+  .mainMenu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(65, 62, 112);
+    height: 100%;
+    overflow-y: auto;
+    pointer-events: none;
+    opacity: 0;    
+    transition: opacity 1s;
+  }
+
+  .mainMenu li {
+    padding: 0;
+  }
+
+  .mainMenu a {
+    color: var(--text-color-inverse);
+    line-height: 70px;
+    font-size: 25px;
+  }
+
+  .openMenu,
+  .closeMenu {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .closeMenu {
+    align-self: flex-end;
+    padding: 20px 15px;
+  }
+
+  .menuOpened {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .openMenu:focus:not(:focus-visible),
+  .closeMenu:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  .mainMenu a::after {
+    content: none;
+  }
+
+  .mainMenu a:hover,
+  .mainMenu a.seleccion {
+    color: rgba(255, 166, 0, 0.739);
+  }
+}
